@@ -6,9 +6,13 @@ namespace GirlsGameSecond.Scene
 {
     public class SceneManager : MonoBehaviour
     {
+        public GameObject _cameraObjects;
+        public Canvas _uiCanvas;
         private void Awake()
         {
             DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(_cameraObjects);
+            DontDestroyOnLoad(_uiCanvas);
         }
         public void SceneLoad(string sceneName)
         {
