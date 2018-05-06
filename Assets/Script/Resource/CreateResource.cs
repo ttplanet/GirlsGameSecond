@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace GirlsGameSecond.Resource
 {
+    /// <summary>
+    /// リソースを
+    /// </summary>
     public class CreateResource
     {
         private static CreateResource _createResource = new CreateResource();
