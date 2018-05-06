@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 namespace GirlsGameSecond.Scene
 {
+    /// <summary>
+    /// シーンマネージャー
+    /// </summary>
     public class SceneManager
     {
         private static SceneManager _sceneManager=new SceneManager();
