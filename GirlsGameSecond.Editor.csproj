@@ -274,6 +274,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="GirlsGameSecond.Plugins.csproj">
+      <Project>{E20E9A8D-FB4A-B3E9-2041-5F4503DDB117}</Project>
+      <Name>GirlsGameSecond.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="GirlsGameSecond.csproj">
       <Project>{26B59FA1-E386-BD5B-E600-7318FDE9C21C}</Project>
       <Name>GirlsGameSecond</Name>
@@ -314,6 +318,7 @@
     <None Include="Assets\Live2D\Cubism\Samples\MultipleModels\Description.txt" />
     <None Include="Assets\Live2D\Cubism\Samples\PerspectiveCamera\Description.txt" />
     <None Include="Assets\Live2D\Cubism\Samples\Raycasting\Description.txt" />
+    <None Include="Assets\Plugins\UniRx\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
