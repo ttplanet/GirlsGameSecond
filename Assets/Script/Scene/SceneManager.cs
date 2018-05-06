@@ -4,16 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 namespace GirlsGameSecond.Scene
 {
-    public class SceneManager : MonoBehaviour
+    public class SceneManager
     {
-        public GameObject _cameraObjects;
-        public Canvas _uiCanvas;
-        private void Awake()
+        private static SceneManager _sceneManager=new SceneManager();
+        public static SceneManager GetInstance
         {
-            DontDestroyOnLoad(this.gameObject);
-            DontDestroyOnLoad(_cameraObjects);
-            DontDestroyOnLoad(_uiCanvas);
+            get
+            {
+                return _sceneManager;
+            }
         }
+
+
+
         public void SceneLoad(string sceneName)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);

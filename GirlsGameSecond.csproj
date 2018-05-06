@@ -326,8 +326,14 @@
     <Compile Include="Assets\Live2D\Cubism\Samples\LookAt\Billboarder.cs" />
     <Compile Include="Assets\Live2D\Cubism\Samples\Masking\MaskTexturePreview.cs" />
     <Compile Include="Assets\Live2D\Cubism\Samples\Raycasting\RaycastHitDisplay.cs" />
+    <Compile Include="Assets\Script\AwakeSc.cs" />
+    <Compile Include="Assets\Script\Constant\ResourcePathcConstant.cs" />
+    <Compile Include="Assets\Script\Constant\ScenePathConstant.cs" />
+    <Compile Include="Assets\Script\GameBase.cs" />
+    <Compile Include="Assets\Script\Resource\CreateResource.cs" />
     <Compile Include="Assets\Script\Scene\SceneManager.cs" />
     <Compile Include="Assets\Script\UI\UIManager.cs" />
+    <Compile Include="Assets\Script\UI\Window\TitleWindowUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Live2D\Cubism\Changelog.txt" />
