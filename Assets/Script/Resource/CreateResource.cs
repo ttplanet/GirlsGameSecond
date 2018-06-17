@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
 namespace GirlsGameSecond.Resource
 {
     /// <summary>
@@ -9,27 +8,35 @@ namespace GirlsGameSecond.Resource
     public class CreateResource
     {
         private static CreateResource _createResource = new CreateResource();
+
         //プロパティ
-        public static CreateResource GetInstance
+        public static CreateResource Instance
         {
             get
             {
                 return _createResource;
             }
-            
-        }
-        /// <summary>
-        /// UICanvasに生成
-        /// </summary>
-        public GameObject CreateWindowUI(string windowPath,Transform parent)
-        {
-            GameObject prefab = Resources.Load<GameObject>(windowPath);
-            GameObject instanceObject 
-            = (GameObject)MonoBehaviour.Instantiate(prefab,prefab.transform.position,prefab.transform.rotation,parent);
-            instanceObject.name = prefab.name;
-            return instanceObject;
         }
 
+        /// <summary>
+        /// スクリプト付きのゲームオブジェクトを生成
+        /// </summary>
+        public T CreateGameObject<T>(string resourcePath, Transform parent = null) where T : MonoBehaviour
+        {
+            GameObject prefab = Resources.Load<GameObject>(resourcePath);
+            GameObject instanceObject = null;
+            if (parent == null)
+            {
+                instanceObject = (GameObject)MonoBehaviour.Instantiate(prefab, prefab.transform.position, prefab.transform.rotation);
+            }
+            else
+            {
+                instanceObject = (GameObject)MonoBehaviour.Instantiate(prefab, parent.position, parent.rotation, parent);
+            }
+            instanceObject.name = prefab.name;
+
+            T t = (T)(object)instanceObject.GetComponent<T>();
+            return t;
+        }
     }
 }
-
