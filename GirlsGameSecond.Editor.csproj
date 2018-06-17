@@ -301,6 +301,22 @@
     <Compile Include="Assets\Live2D\Cubism\Editor\Inspectors\CubismRendererInspector.cs" />
     <Compile Include="Assets\Live2D\Cubism\Editor\Inspectors\CubismUserDataTagInspector.cs" />
     <Compile Include="Assets\Live2D\Cubism\Samples\Editor\ImportCustomization.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\AndroidPlugin.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\Autorun.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\BuildPostProcessor.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\EditorConstants.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\Installer.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\Legacy\LunarConsoleLegacyActionsEditor.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\Log.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\LunarConsoleActionEditor.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\LunarConsoleEditor.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\LunarConsoleEditorAnalytics.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\LunarConsoleHttpClient.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\MenuItems.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\SimpleJSON.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\UI\ActionsAndVariablesWindow.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\Updater.cs" />
+    <Compile Include="Assets\LunarConsole\Editor\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Live2D\Cubism\Changelog.txt" />
@@ -318,7 +334,9 @@
     <None Include="Assets\Live2D\Cubism\Samples\MultipleModels\Description.txt" />
     <None Include="Assets\Live2D\Cubism\Samples\PerspectiveCamera\Description.txt" />
     <None Include="Assets\Live2D\Cubism\Samples\Raycasting\Description.txt" />
+    <None Include="Assets\LunarConsole\readme.txt" />
     <None Include="Assets\Plugins\UniRx\ReadMe.txt" />
+    <None Include="Assets\Resources\Story\sample.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
